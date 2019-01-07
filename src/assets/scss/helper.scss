@@ -1,0 +1,12 @@
+@mixin dotTopRight {
+	&:after {
+		content: '';
+		width: .4rem;
+		height: .4rem;
+		background-color: $color-white;
+		border-radius: 50%;
+		position: absolute;
+		top: .2rem;
+		right: -.5rem;
+	}
+}

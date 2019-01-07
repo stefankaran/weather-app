@@ -1,0 +1,72 @@
+.LoaderGrid {
+	width: 80px;
+	height: 80px;
+	margin: 100px auto;
+}
+
+.LoaderCube {
+	width: 33%;
+	height: 33%;
+	background-color: #333;
+	float: left;
+	-webkit-animation: LoaderGridGridScaleDelay 1.3s infinite ease-in-out;
+	animation: LoaderGridGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.LoaderCube1 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s; }
+
+.LoaderCube2 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s; }
+
+.LoaderCube3 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s; }
+
+.LoaderCube4 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s; }
+
+.LoaderCube5 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s; }
+
+.LoaderCube6 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s; }
+
+.LoaderCube7 {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s; }
+
+.LoaderCube8 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s; }
+
+.LoaderCube9 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s; }
+
+@-webkit-keyframes LoaderGridGridScaleDelay {
+	0%, 70%, 100% {
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	35% {
+		-webkit-transform: scale3D(0, 0, 1);
+		transform: scale3D(0, 0, 1);
+	}
+}
+
+@keyframes LoaderGridGridScaleDelay {
+	0%, 70%, 100% {
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	35% {
+		-webkit-transform: scale3D(0, 0, 1);
+		transform: scale3D(0, 0, 1);
+	}
+}

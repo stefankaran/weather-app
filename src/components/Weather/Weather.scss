@@ -1,0 +1,24 @@
+@import "../../assets/scss/breakpoints";
+@import "../../assets/scss/colors";
+
+.weather {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: .8rem;
+	max-width: 80rem;
+	padding: 4rem 2.5rem;
+	text-align: center;
+	color: $color-white;
+	background-image: linear-gradient($color-weather-background-from, $color-weather-background-to);
+
+	@include breakpoint( overPhone ) {
+		grid-template-columns: 34.7% 64.3%;
+		text-align: left;
+		padding: 14rem 8.5rem 12rem;
+		margin: 0 auto;
+	}
+
+	&--full-width {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

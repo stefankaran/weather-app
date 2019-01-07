@@ -1,0 +1,16 @@
+@import "../../../assets/scss/breakpoints";
+@import "../../../assets/scss/colors";
+
+.weather-currently-details {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row: 2/3;
+	grid-gap: 2rem 4rem;
+	background-color: $color-weather-currently-details-background-from; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to top right, $color-weather-currently-details-background-from, $color-weather-currently-details-background-to);
+	padding: 3.5rem 2rem;
+
+	@include breakpoint( overPhone ) {
+		padding: 1.6rem 2.2rem;
+	}
+}

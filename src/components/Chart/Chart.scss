@@ -1,0 +1,36 @@
+@import "../../assets/scss/breakpoints";
+@import "../../assets/scss/colors";
+
+.chart {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: visible;
+	transform: translate(-50%, -61%) scale(0.73);
+
+	@include breakpoint( overPhone ) {
+		transform: translate(-50%, -51%) scale(0.44);
+	}
+
+	&__shape {
+		opacity: .2;
+
+		&--first {
+			fill: $color-shape-fill-first;
+		}
+
+		&--second {
+			fill: $color-shape-fill-second;
+		}
+	}
+
+	&__line-path {
+		fill: none;
+	}
+
+	&__line {
+		stroke: $color-line;
+		stroke-width: .4rem;
+		stroke-linecap: round;
+	}
+}

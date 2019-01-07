@@ -1,0 +1,83 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?s4af3w') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?s4af3w') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?s4af3w##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon--"], [class*=" icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--fog {
+  &:before {
+    content: $icon--fog; 
+  }
+}
+.icon--wind {
+  &:before {
+    content: $icon--wind; 
+  }
+}
+.icon--angle-down {
+  &:before {
+    content: $icon--angle-down; 
+  }
+}
+.icon--cloud {
+  &:before {
+    content: $icon--cloud; 
+  }
+}
+.icon--cloudy {
+  &:before {
+    content: $icon--cloudy; 
+  }
+}
+.icon--moon {
+  &:before {
+    content: $icon--moon; 
+  }
+}
+.icon--rain {
+  &:before {
+    content: $icon--rain; 
+  }
+}
+.icon--refresh {
+  &:before {
+    content: $icon--refresh; 
+  }
+}
+.icon--snowing {
+  &:before {
+    content: $icon--snowing; 
+  }
+}
+.icon--storn {
+  &:before {
+    content: $icon--storn; 
+  }
+}
+.icon--sun {
+  &:before {
+    content: $icon--sun; 
+  }
+}
+
